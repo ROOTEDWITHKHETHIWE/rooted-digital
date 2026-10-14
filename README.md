@@ -38,3 +38,7 @@ You can double-click `index.html` to open the site in a browser. Because the sit
 The homepage now leads with what Rooted Digital builds. Local screenshots show the actual public landing pages of Dream Stewardship, The Ministry of the Womb and Rooted Market Intelligence, captured on 14 October 2026. These are public landing-page views, not signed-in dashboards. Private platform descriptions remain on the Work page. All arrows are drawn SVGs. Product screens float gently and links respond on hover; reduced-motion preferences are respected.
 
 Upload **all extracted files and the assets folder** together to replace your existing website files. Keep the folder structure intact. No install or build command is needed. Open index.html to preview. Existing service prices and the contact email are preserved.
+
+## Portfolio additions
+
+Woman Restored uses its actual public app entry screen and links to https://woman-restored.vercel.app/. Rooted with Khethiwe represents the course platform with its actual catalogue screenshot and links to https://www.rootedwithkhethiwe.space/courses. Public screenshots were captured on 14 October 2026. Member prayer content remains protected by the app.
