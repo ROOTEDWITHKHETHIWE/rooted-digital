@@ -32,3 +32,9 @@ You can double-click `index.html` to open the site in a browser. Because the sit
 - Shared visual styling lives in `styles.css`; Work and Services page styling lives in `pages.css`.
 - The email address used by all contact buttons is `rootedwithkhethiwe@gmail.com`.
 - The site uses only local files and can remain on GitHub and Vercel’s free tiers.
+
+## October 14 visual update
+
+The homepage now leads with what Rooted Digital builds. Local screenshots show the actual public landing pages of Dream Stewardship, The Ministry of the Womb and Rooted Market Intelligence, captured on 14 October 2026. These are public landing-page views, not signed-in dashboards. Private platform descriptions remain on the Work page. All arrows are drawn SVGs. Product screens float gently and links respond on hover; reduced-motion preferences are respected.
+
+Upload **all extracted files and the assets folder** together to replace your existing website files. Keep the folder structure intact. No install or build command is needed. Open index.html to preview. Existing service prices and the contact email are preserved.
