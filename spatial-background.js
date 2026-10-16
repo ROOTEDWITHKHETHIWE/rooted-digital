@@ -69,7 +69,7 @@
       const diffuse = Math.abs(normal.reduce((sum,n,k) => sum+n*light[k],0));
       const shine = Math.pow(diffuse, 14);
       const intensity = .21 + diffuse * .57 + shine * .36;
-      const color = [206,177,112].map((n) => Math.min(255,Math.round(n * intensity + shine * 35)));
+      const color = [163,112,235].map((n) => Math.min(255,Math.round(n * intensity + shine * 35)));
       context.fillStyle = `rgb(${color.join(',')})`;
       context.strokeStyle = context.fillStyle;
       context.lineWidth = .45;

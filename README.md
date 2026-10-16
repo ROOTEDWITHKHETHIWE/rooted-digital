@@ -26,7 +26,7 @@ Upload the contents of this folder, including `assets/`, to your existing GitHub
 - `assets/` — actual public landing-page screenshots captured on 14 October 2026.
 - `tests/site.test.mjs` and `tests/motion.test.mjs` — code checks.
 
-## Current update: Work and Services
+## Work and Services motion update
 
 Replace `work.html`, `services.html`, `pages.css` and `README.md`. Add `pages-motion.js`. Keep `motion.css`, `spatial-background.js` and all other files from the latest homepage update. No image assets or service prices changed in this update.
 
@@ -45,3 +45,10 @@ Run `npm test` or `node --test tests/*.test.mjs`. Seven checks cover site struct
 ## Contact
 
 Enquiry buttons use `rootedwithkhethiwe@gmail.com`. Edit page text in the relevant HTML file. Service prices remain R6,500 for Websites, R18,000 for Web Apps and R12,500 for Member Platforms, each described as starting from.
+
+
+## Current update: midnight violet
+
+The full website now uses near-black purple backgrounds, deep plum surfaces, silver-lilac type and restrained violet highlights. The 3D mesh is lit in purple. Original product screenshot images retain their own brand colours.
+
+Replace these files for the colour update: `styles.css`, `motion.css`, `pages.css`, `spatial-background.js`, `README.md`. No HTML, pricing, links or image assets changed.
