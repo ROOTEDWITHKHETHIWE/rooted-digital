@@ -52,3 +52,8 @@ Enquiry buttons use `rootedwithkhethiwe@gmail.com`. Edit page text in the releva
 The full website now uses near-black purple backgrounds, deep plum surfaces, silver-lilac type and restrained violet highlights. The 3D mesh is lit in purple. Original product screenshot images retain their own brand colours.
 
 Replace these files for the colour update: `styles.css`, `motion.css`, `pages.css`, `spatial-background.js`, `README.md`. No HTML, pricing, links or image assets changed.
+
+
+## Reduced-motion badge removal
+
+The “Reduced motion enabled” status badge is hidden on all three pages. Device reduced-motion preferences still work. Replace `motion.css` for this change; there are no new files.
