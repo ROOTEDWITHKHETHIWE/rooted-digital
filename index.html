@@ -6,7 +6,10 @@
     <meta name="description" content="Rooted Digital builds thoughtful websites, web apps and member platforms for meaningful work." />
     <title>Rooted Digital — Websites, apps &amp; member platforms</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="motion.css" />
     <script src="script.js" defer></script>
+    <script src="motion-state.js" defer></script>
+    <script src="motion.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -22,27 +25,48 @@
     </header>
 
     <main id="main-content">
-      <section class="hero section-dark">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Rooted Digital · Design &amp; Development</p>
-          <h1>We build websites.<br>We build apps.<br><em>We connect people.</em></h1>
-          <p class="lede">Digital products that turn your work into a platform people can use. Websites, web apps and member spaces for organisations, businesses and communities.</p>
-          <div class="actions">
-            <a class="button button-gold" href="mailto:rootedwithkhethiwe@gmail.com?subject=I%27d%20like%20to%20build%20with%20Rooted%20Digital">Start a conversation <span aria-hidden="true"><svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></span></a>
-            <a class="text-link light" href="work.html">See our work <span aria-hidden="true"><svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></span></a>
+      <div class="living-backdrop" aria-hidden="true"><div class="ambient-light ambient-one"></div><div class="ambient-light ambient-two"></div><div class="world-grid"></div></div>
+      <section class="motion-journey section-dark" aria-label="Rooted Digital product journey">
+        <div class="journey-sticky">
+          <div class="journey-topline"><span><i class="live-dot" aria-hidden="true"></i> Ideas, brought to life.</span><button class="motion-toggle" type="button" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button></div>
+          <div class="journey-layout">
+            <div class="journey-copy">
+              <p class="eyebrow">Rooted Digital · Design &amp; Development</p>
+              <h1>We build<br>digital products.<br><em>Made for people.</em></h1>
+              <p class="journey-lede">Websites, apps and member platforms that bring your ideas into everyday life.</p>
+              <div class="actions"><a class="button button-gold" href="mailto:rootedwithkhethiwe@gmail.com?subject=Rooted%20Digital%20enquiry">Let’s build yours <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7"/></svg></a><a class="text-link light" href="work.html">Explore our work</a></div>
+              <div class="chapter-copy" aria-label="Featured products">
+                <div class="chapter is-current" data-chapter="0"><span class="chapter-number">01 / PERSONAL TOOLS</span><h2>Room for the things<br>that matter.</h2><p>Dream Stewardship turns reflection into a personal practice.</p><a href="work.html#dream">Explore Dream Stewardship <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+                <div class="chapter" data-chapter="1"><span class="chapter-number">02 / KNOWLEDGE PLATFORMS</span><h2>Information.<br>With a purpose.</h2><p>Rooted Market Intelligence brings research and insight together.</p><a href="work.html#rmi">Explore Market Intelligence <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+                <div class="chapter" data-chapter="2"><span class="chapter-number">03 / CONNECTED COMMUNITIES</span><h2>A place for<br>your people.</h2><p>Woman Restored gives a community its own digital gathering place.</p><a href="work.html#women-restored">Explore Woman Restored <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+              </div>
+            </div>
+            <div class="scene-column">
+              <div class="scene-viewport" aria-label="Dimensional showcase of actual Rooted Digital products">
+                <div class="scene-world">
+                  <div class="scene-ring ring-one" aria-hidden="true"></div><div class="scene-ring ring-two" aria-hidden="true"></div><div class="scene-ring ring-three" aria-hidden="true"></div>
+                  <div class="scene-orb orb-one" aria-hidden="true"></div><div class="scene-orb orb-two" aria-hidden="true"></div><div class="scene-orb orb-three" aria-hidden="true"></div>
+                  <div class="scene-platform" aria-hidden="true"></div>
+                  <div class="device-rig">
+                    <div class="spatial-laptop">
+                      <div class="laptop-lid"><div class="camera-dot" aria-hidden="true"></div><div class="laptop-display"><div class="display-chrome"><span class="chrome-dots" aria-hidden="true">● ● ●</span><span>Built by Rooted Digital</span></div>
+                        <div class="screen-stack"><img class="scene-screen is-current" data-screen="0" src="assets/dream-stewardship.jpg" width="1350" height="926" alt="Dream Stewardship public landing page"><img class="scene-screen" data-screen="1" src="assets/market-intelligence.jpg" width="1350" height="926" alt="Rooted Market Intelligence public landing page"><img class="scene-screen" data-screen="2" src="assets/woman-restored.jpg" width="1350" height="926" alt="Woman Restored public app entry page"></div>
+                      </div></div><div class="laptop-deck" aria-hidden="true"><div class="keyboard-lines"></div><div class="trackpad"></div></div><div class="laptop-edge" aria-hidden="true"></div>
+                    </div>
+                    <div class="spatial-phone"><div class="phone-island" aria-hidden="true"></div><div class="phone-product"><span class="phone-wordmark">ROOTED DIGITAL</span><span class="phone-status"><i class="live-dot" aria-hidden="true"></i> Built around you</span><div class="phone-symbol" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="34"/><ellipse cx="50" cy="50" rx="15" ry="34"/><path d="M16 50h68M23 30h54M23 70h54"/></svg></div><strong>Meaningful work.<br>Digital possibilities.</strong><span class="phone-rule"></span><span class="phone-feature">Websites</span><span class="phone-feature">Web apps</span><span class="phone-feature">Member platforms</span><span class="phone-bottom">Thoughtfully connected.</span></div></div>
+                  </div>
+                  <div class="floating-label" aria-hidden="true"><i class="live-dot"></i><span data-scene-label>Dream Stewardship</span></div>
+                </div>
+              </div>
+              <div class="scene-caption"><span>REAL PRODUCTS / REAL POSSIBILITIES</span><span class="scene-count" aria-hidden="true">01 — 03</span></div>
+            </div>
           </div>
-          <ul class="audience-list" aria-label="Who we build for">
-            <li>Purpose-led organisations</li><li>Ministries &amp; non-profits</li><li>Education &amp; community platforms</li>
-          </ul>
-        </div>
-        <div class="product-showcase reveal">
-          <a class="showcase-main" href="work.html#dream"><div class="screen-bar"><span class="screen-dots" aria-hidden="true"></span><span>Dream Stewardship · Web app</span></div><img src="assets/dream-stewardship.jpg" alt="The actual Dream Stewardship landing page, with its navy and cream design" width="1350" height="926"></a>
-          <a class="showcase-secondary" href="work.html#womb"><img src="assets/ministry-of-the-womb.jpg" alt="The actual Ministry of the Womb landing page, with floral artwork and gold details" width="1363" height="936"><span>The Ministry of the Womb</span></a>
-          <p class="showcase-caption">Real products. Distinct identities. One thoughtful approach.</p>
+          <div class="journey-bottom"><a class="scroll-cue" href="#featured-work"><span class="scroll-mouse" aria-hidden="true"></span> Scroll to explore</a><div class="journey-tabs" aria-label="Choose a featured product"><button type="button" data-go="0" aria-label="Show Dream Stewardship" aria-pressed="true"><span>01</span><span class="tab-name">Reflect</span></button><button type="button" data-go="1" aria-label="Show Market Intelligence" aria-pressed="false"><span>02</span><span class="tab-name">Discover</span></button><button type="button" data-go="2" aria-label="Show Woman Restored" aria-pressed="false"><span>03</span><span class="tab-name">Connect</span></button></div><span class="journey-word">BUILT TO MOVE YOU.</span></div>
+          <div class="journey-progress" aria-hidden="true"></div>
         </div>
       </section>
 
-      <section class="section intro-section reveal">
+      <section class="section intro-section reveal" id="featured-work">
         <p class="eyebrow">Featured work</p>
         <div class="split-heading"><h2>Products we have brought to life.</h2><p>From personal journals to research platforms and private communities — see how we bring different ideas into usable digital experiences.</p></div>
         <div class="project-grid">

@@ -42,3 +42,28 @@ Upload **all extracted files and the assets folder** together to replace your ex
 ## Portfolio additions
 
 Woman Restored uses its actual public app entry screen and links to https://woman-restored.vercel.app/. Rooted with Khethiwe represents the course platform with its actual catalogue screenshot and links to https://www.rootedwithkhethiwe.space/courses. Public screenshots were captured on 14 October 2026. Member prayer content remains protected by the app.
+
+
+## October 16 — living product showcase
+
+The homepage now has a continuous dimensional scene: laptop, phone, orbital rings, floating spheres and ambient light. Desktop scrolling controls the scene angle and moves through three real public product screens. Pointer movement adds a small depth response on a mouse. Product selector buttons also work with a keyboard. Mobile uses a normal page flow with a smaller scene and product selector buttons.
+
+This is built with CSS perspective and small local JavaScript files, rather than a downloadable WebGL model or video. The laptop uses existing public product screenshots; the phone shows a Rooted Digital brand illustration, not a signed-in app screen.
+
+### Files to upload
+
+Upload all extracted files and the `assets/` folder. Keep these new files at the top level beside `index.html`:
+
+- `motion.css` — dimensional devices, background, animation and responsive layouts.
+- `motion-state.js` — scroll progress and camera state.
+- `motion.js` — scene updates, product selection, pause control and pointer interaction.
+
+The homepage remains `index.html`. `work.html` and `services.html` retain the existing portfolio and service information. No installation, subscriptions or build step is required. Double-click `index.html` after extracting the ZIP to preview. Upload the folder contents to your existing GitHub repository to update your Vercel site.
+
+### Motion and access
+
+Use “Pause motion” at the top of the homepage to stop ambient animation and camera movement. Operating-system reduced-motion settings are respected automatically. Product selectors stay usable when motion is paused. Hidden chapter links are removed from keyboard navigation. No autoplay sound or video is used.
+
+### Verification
+
+Run `npm test` to check scene progress, chapter selection, reduced-motion camera state and the existing site checks. Browser visual review is still required before launch; check desktop and phone layouts, scroll through all three products, use the selectors and pause control, and verify enquiry links.
