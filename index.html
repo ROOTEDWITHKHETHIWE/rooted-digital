@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="motion.css" />
     <script src="script.js" defer></script>
     <script src="motion-state.js" defer></script>
+    <script src="spatial-background.js" defer></script>
     <script src="motion.js" defer></script>
   </head>
   <body>
@@ -25,7 +26,7 @@
     </header>
 
     <main id="main-content">
-      <div class="living-backdrop" aria-hidden="true"><div class="ambient-light ambient-one"></div><div class="ambient-light ambient-two"></div><div class="world-grid"></div></div>
+      <div class="living-backdrop" aria-hidden="true"><div class="ambient-light ambient-one"></div><div class="ambient-light ambient-two"></div><div class="world-grid"></div><canvas class="spatial-background"></canvas></div>
       <section class="motion-journey section-dark" aria-label="Rooted Digital product journey">
         <div class="journey-sticky">
           <div class="journey-topline"><span><i class="live-dot" aria-hidden="true"></i> Ideas, brought to life.</span><button class="motion-toggle" type="button" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button></div>

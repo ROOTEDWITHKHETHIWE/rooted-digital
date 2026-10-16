@@ -24,8 +24,13 @@
     root.style.setProperty('--scene-lift', `${state.lift}px`);
     root.style.setProperty('--scene-orbit', `${state.orbit}deg`);
     root.style.setProperty('--scene-scale', state.scale);
+    root.style.setProperty('--scene-travel', `${state.travel}px`);
+    root.style.setProperty('--scene-tilt', `${state.tilt}deg`);
+    root.style.setProperty('--scene-roll', `${state.roll}deg`);
     root.style.setProperty('--journey-progress', progress);
     root.style.setProperty('--background-shift', `${(paused || reduced.matches) ? 0 : Math.min(window.scrollY * .065, 200)}px`);
+    const pageTravel = document.documentElement.scrollHeight - window.innerHeight;
+    window.RootedLandscape?.update(pageTravel > 0 ? window.scrollY / pageTravel : 0, paused || reduced.matches);
     const chapter = forcedChapter ?? state.chapter;
     if (chapter === activeChapter) return;
     activeChapter = chapter;

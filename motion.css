@@ -14,3 +14,17 @@ body{background:#0b202b;isolation:isolate}.site-header{background:#0b202b;border
 .motion-paused *,.page-hidden *{animation-play-state:paused!important}.motion-paused .scene-world,.motion-paused .scene-screen,.motion-paused .chapter,.motion-paused .icon-arrow,.motion-paused .project-card,.motion-paused .project-screen img{transition:none!important}.motion-paused .chapter{animation:none!important}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.motion-journey{height:auto}.journey-sticky{position:relative;height:auto;min-height:0;padding-top:0;padding-bottom:20px}.journey-layout{padding:25px 0}.device-rig{transform:rotateY(-12deg)}.scene-world{transform:none}.world-grid{transform:perspective(900px) rotateX(56deg) rotateZ(-14deg)}.journey-progress{display:none}}
 @media(scripting:none){.motion-journey{height:auto}.journey-sticky{height:auto;min-height:0;position:relative}.journey-layout{padding:30px 0}.chapter{display:block;margin-bottom:20px}.motion-toggle,.journey-tabs{display:none}.journey-progress{display:none}}
+
+/* Revision: an actual rotating mesh behind the page, with a wider camera path. */
+:root{--scene-travel:0px;--scene-tilt:0deg;--scene-roll:0deg}
+.spatial-background{position:absolute;inset:0;width:100%;height:100%;opacity:.57;mask-image:linear-gradient(90deg,transparent 18%,#0009 45%,#000 75%)}
+.world-grid{opacity:.4}.scene-ring,.scene-orb{display:none}
+.device-rig{transform-style:flat;transform:translate(var(--scene-travel),var(--scene-lift)) rotateX(var(--scene-tilt)) rotateY(var(--scene-turn)) rotateZ(var(--scene-roll)) scale(var(--scene-scale))}
+.spatial-laptop{z-index:1}
+.spatial-phone{z-index:5;right:-2%;top:11%;height:101%;width:25%;transform:rotate(-7deg);animation:phone-drift-v2 9s ease-in-out infinite;box-shadow:-16px 16px 40px #0009}
+.scene-world{isolation:isolate}.scene-viewport{perspective:1400px}
+.intro-section{background:#102630b8;color:#f6f3ed}.intro-section .eyebrow{color:#d8b56b}.intro-section .split-heading>p{color:#b7c7cc}.intro-section .project-card{color:#10242f}.intro-section>.text-link{color:#dfc894}
+.services-preview{background:#0d222bba;color:#f6f3ed;border-top-color:#dfc8942e}.services-preview .split-heading>p,.services-preview .service-grid p{color:#b7c7cc}.services-preview .eyebrow{color:#d8b56b}.services-preview .service-grid,.services-preview .service-grid>a{border-color:#dfc89430}.services-preview .service-icon,.services-preview .arrow{color:#dfc894}
+@keyframes phone-drift-v2{50%{transform:translateY(-12px) rotate(-4deg)}}
+@media(max-width:900px){.device-rig{transform:translateX(calc(var(--scene-travel) * .3)) translateY(calc(var(--scene-lift) * .3)) rotateY(calc(var(--scene-turn) * .45)) rotateZ(calc(var(--scene-roll) * .4)) scale(.96)}.spatial-phone{right:-3%;height:101%;width:25%;z-index:5}.spatial-background{opacity:.36;mask-image:linear-gradient(90deg,transparent,#000 70%)}.intro-section,.services-preview{background:#0b202be8}}
+@media(prefers-reduced-motion:reduce){.device-rig{transform:rotateY(-12deg)}.spatial-phone{transform:rotate(-7deg)}.spatial-background{opacity:.3}}

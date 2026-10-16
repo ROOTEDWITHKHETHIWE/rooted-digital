@@ -67,3 +67,14 @@ Use “Pause motion” at the top of the homepage to stop ambient animation and 
 ### Verification
 
 Run `npm test` to check scene progress, chapter selection, reduced-motion camera state and the existing site checks. Browser visual review is still required before launch; check desktop and phone layouts, scroll through all three products, use the selectors and pause control, and verify enquiry links.
+
+
+## October 16 — stronger motion revision
+
+`spatial-background.js` is a NEW required file beside `index.html`. It builds a shaded, interwoven 3D loop locally and renders it to Canvas. Its rotation, camera distance, size and position change through page scrolling, with continuous idle rotation. No external model, video, library, API or payment is required. Reduced motion, pause and hidden-tab controls stop the renderer.
+
+The laptop and phone still use CSS perspective. The camera now has 68 degrees of travel, a wider side-to-side movement and a visible midpoint zoom. Their composition is flattened at the device-rig boundary so the phone can be painted as a separate foreground layer without the laptop keyboard intersecting it. Mobile also receives scaled scroll movement. The Work and Services links retain their destinations; the homepage sections now use a translucent dark treatment so the background scene can continue beneath them.
+
+Updated paths in this revision: `index.html`, `motion.css`, `motion.js`, `motion-state.js`, `tests/motion.test.mjs`, `README.md`. New path: `spatial-background.js`. No image assets changed.
+
+Validation: seven Node tests pass. A renderer smoke check exercised projected coordinates, desktop/phone resize, scrolling, pause and hidden-tab cancellation. Browser visual inspection is pending.
