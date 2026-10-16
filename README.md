@@ -1,80 +1,47 @@
 # Rooted Digital
 
-A static three-page website for Rooted Digital — websites, web apps and member platforms for meaningful work.
+A three-page website with a continuous rotating 3D background, dimensional product previews and scroll-responsive motion. All assets and scripts run locally; no installation or build step is required.
 
-## Preview it locally
+## Preview
 
-You can double-click `index.html` to open the site in a browser. Because the site has no build step, database or server, it will work immediately.
+Extract the complete ZIP and double-click `index.html`. Follow the navigation to Work and Services. Keep every file in its supplied relative location.
 
-## Put it on GitHub
+## Upload to GitHub / Vercel
 
-1. Create a new empty GitHub repository, for example `rooted-digital`.
-2. Upload the contents of this folder — not the parent folder itself — to the new repository.
-3. Keep these files together: `index.html`, `work.html`, `services.html`, `styles.css`, `pages.css`, `script.js`, `package.json` and this `README.md`.
+Upload the contents of this folder, including `assets/`, to your existing GitHub repository. Do not upload only the ZIP or an extra parent folder. Your linked Vercel project can deploy it as a static website with no build command. Existing domain settings remain with your hosting project.
 
-## Deploy on Vercel
+## File paths
 
-1. Sign in to Vercel with the GitHub account that owns the repository.
-2. Select **Add New → Project**, then import the `rooted-digital` repository.
-3. Vercel will recognise it as a static site. Leave the build command blank and deploy.
-4. Every future change you push to GitHub will trigger a new Vercel deployment automatically.
+- `index.html` — homepage, dimensional device showcase and product journey.
+- `work.html` — six portfolio projects with screenshots and access links.
+- `services.html` — service packages, prices, process and enquiry links.
+- `styles.css` — shared base styling.
+- `motion.css` — homepage scene and shared moving background styles.
+- `pages.css` — Work and Services styling, dimensional project frames, service panels and process line.
+- `script.js` — navigation, section reveals and footer year.
+- `motion-state.js` — homepage scroll/camera calculations.
+- `motion.js` — homepage scene, product selectors and motion controls.
+- `spatial-background.js` — rotating, shaded 3D loop rendered to Canvas on every page.
+- `pages-motion.js` — Work and Services scroll movement, pointer response and motion controls.
+- `assets/` — actual public landing-page screenshots captured on 14 October 2026.
+- `tests/site.test.mjs` and `tests/motion.test.mjs` — code checks.
 
-## Connect a domain later
+## Current update: Work and Services
 
-1. Buy your preferred domain when you are ready, for example `rooteddigital.co.za` or `rooteddigital.com` if available.
-2. In the Vercel project, open **Settings → Domains** and add the domain.
-3. Vercel will show the exact DNS record(s) to add at the domain provider.
-4. Once the DNS change has propagated, set the chosen domain as the primary domain in Vercel.
+Replace `work.html`, `services.html`, `pages.css` and `README.md`. Add `pages-motion.js`. Keep `motion.css`, `spatial-background.js` and all other files from the latest homepage update. No image assets or service prices changed in this update.
 
-## Make updates
+Work now has a dark visual treatment, browser-framed portfolio images, numbered project sections, scroll movement and subtle pointer tilt. Services has dimensional service panels, gold pricing badges, a scroll-filled process line and coordinated enquiry sections. Both pages use the same continuous 3D background and pause controls as Home.
 
-- Update website copy directly in the three `.html` files.
-- Shared visual styling lives in `styles.css`; Work and Services page styling lives in `pages.css`.
-- The email address used by all contact buttons is `rootedwithkhethiwe@gmail.com`.
-- The site uses only local files and can remain on GitHub and Vercel’s free tiers.
+## Motion and accessibility
 
-## October 14 visual update
+Use Pause motion near the top of each page to stop the moving background and decorative movement. Operating-system reduced-motion settings are respected automatically. Animations stop in hidden tabs. Mobile uses smaller movements and a normal page flow. Product selectors remain usable with a keyboard and when motion is paused. No autoplay sound or video is used.
 
-The homepage now leads with what Rooted Digital builds. Local screenshots show the actual public landing pages of Dream Stewardship, The Ministry of the Womb and Rooted Market Intelligence, captured on 14 October 2026. These are public landing-page views, not signed-in dashboards. Private platform descriptions remain on the Work page. All arrows are drawn SVGs. Product screens float gently and links respond on hover; reduced-motion preferences are respected.
+The background is a procedurally generated, shaded 3D mesh projected with Canvas. Devices are built with CSS perspective. The laptop shows actual public product screenshots. The phone is a Rooted Digital brand illustration, not a private app dashboard. The site has no external model, animation-library or video dependencies.
 
-Upload **all extracted files and the assets folder** together to replace your existing website files. Keep the folder structure intact. No install or build command is needed. Open index.html to preview. Existing service prices and the contact email are preserved.
+## Verification
 
-## Portfolio additions
+Run `npm test` or `node --test tests/*.test.mjs`. Seven checks cover site structure, contact actions, portfolio/service content, scene progress, chapter selection and camera state. Local file links and anchors have also been checked. Browser visual review is still required before launch: check all three pages on desktop and phone, pause motion, test reduced-motion settings and follow the enquiry links.
 
-Woman Restored uses its actual public app entry screen and links to https://woman-restored.vercel.app/. Rooted with Khethiwe represents the course platform with its actual catalogue screenshot and links to https://www.rootedwithkhethiwe.space/courses. Public screenshots were captured on 14 October 2026. Member prayer content remains protected by the app.
+## Contact
 
-
-## October 16 — living product showcase
-
-The homepage now has a continuous dimensional scene: laptop, phone, orbital rings, floating spheres and ambient light. Desktop scrolling controls the scene angle and moves through three real public product screens. Pointer movement adds a small depth response on a mouse. Product selector buttons also work with a keyboard. Mobile uses a normal page flow with a smaller scene and product selector buttons.
-
-This is built with CSS perspective and small local JavaScript files, rather than a downloadable WebGL model or video. The laptop uses existing public product screenshots; the phone shows a Rooted Digital brand illustration, not a signed-in app screen.
-
-### Files to upload
-
-Upload all extracted files and the `assets/` folder. Keep these new files at the top level beside `index.html`:
-
-- `motion.css` — dimensional devices, background, animation and responsive layouts.
-- `motion-state.js` — scroll progress and camera state.
-- `motion.js` — scene updates, product selection, pause control and pointer interaction.
-
-The homepage remains `index.html`. `work.html` and `services.html` retain the existing portfolio and service information. No installation, subscriptions or build step is required. Double-click `index.html` after extracting the ZIP to preview. Upload the folder contents to your existing GitHub repository to update your Vercel site.
-
-### Motion and access
-
-Use “Pause motion” at the top of the homepage to stop ambient animation and camera movement. Operating-system reduced-motion settings are respected automatically. Product selectors stay usable when motion is paused. Hidden chapter links are removed from keyboard navigation. No autoplay sound or video is used.
-
-### Verification
-
-Run `npm test` to check scene progress, chapter selection, reduced-motion camera state and the existing site checks. Browser visual review is still required before launch; check desktop and phone layouts, scroll through all three products, use the selectors and pause control, and verify enquiry links.
-
-
-## October 16 — stronger motion revision
-
-`spatial-background.js` is a NEW required file beside `index.html`. It builds a shaded, interwoven 3D loop locally and renders it to Canvas. Its rotation, camera distance, size and position change through page scrolling, with continuous idle rotation. No external model, video, library, API or payment is required. Reduced motion, pause and hidden-tab controls stop the renderer.
-
-The laptop and phone still use CSS perspective. The camera now has 68 degrees of travel, a wider side-to-side movement and a visible midpoint zoom. Their composition is flattened at the device-rig boundary so the phone can be painted as a separate foreground layer without the laptop keyboard intersecting it. Mobile also receives scaled scroll movement. The Work and Services links retain their destinations; the homepage sections now use a translucent dark treatment so the background scene can continue beneath them.
-
-Updated paths in this revision: `index.html`, `motion.css`, `motion.js`, `motion-state.js`, `tests/motion.test.mjs`, `README.md`. New path: `spatial-background.js`. No image assets changed.
-
-Validation: seven Node tests pass. A renderer smoke check exercised projected coordinates, desktop/phone resize, scrolling, pause and hidden-tab cancellation. Browser visual inspection is pending.
+Enquiry buttons use `rootedwithkhethiwe@gmail.com`. Edit page text in the relevant HTML file. Service prices remain R6,500 for Websites, R18,000 for Web Apps and R12,500 for Member Platforms, each described as starting from.
